@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Navbar, Footer, Notfound } from "./Publics/Skeleton";
+import Home from "./Publics/Home";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
       </>
     ),
     errorElement: <Notfound />,
-    children: [{ path: "about", element: <h1>Home</h1> }],
+    children: [{ path: "", element: <Home /> }],
   },
 ]);
 
